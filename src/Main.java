@@ -4,9 +4,9 @@ public class Main {
 
         int loser = 0;
 
-        int speedOfPlayer1 = 0;
+        int speedOfPlayer1 = 1;
         int speedOfPlayer2 = 0;
-        int speedOfPlayer3 = 0;
+        int speedOfPlayer3 = 2;
 
         if (speedOfPlayer1 != 0) {
             loser = loser + 1;

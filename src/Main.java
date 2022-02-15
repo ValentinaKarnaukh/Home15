@@ -8,16 +8,16 @@ public class Main {
         int speedOfPlayer2 = 5;
         int speedOfPlayer3 = 2;
 
-        if (speedOfPlayer1 != 0) {
-            loser = loser + 1;
-        }
-
-        if (speedOfPlayer2 != 0) {
-            loser = loser + 1;
-        }
-
-        if (speedOfPlayer3 != 0) {
-            loser = loser + 1;
+        if (isGreenLight ==false) {
+            if (speedOfPlayer1 != 0) {
+                loser = loser + 1;
+            }
+            if (speedOfPlayer2 != 0) {
+                loser = loser + 1;
+            }
+            if (speedOfPlayer3 != 0) {
+                loser = loser + 1;
+            }
         }
 
         System.out.println("Выбыло" + loser);

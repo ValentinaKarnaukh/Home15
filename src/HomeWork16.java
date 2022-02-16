@@ -1,43 +1,45 @@
 public class HomeWork16 {
-    boolean isGreenLight = false;
+    static boolean isGreenLight = false;
 
-    public static boolean getSpeed1(int speedOfPlayer1) {
+    public static boolean speed1(int speedOfPlayer1) {
         int speedWin = 0;
-        if (speedOfPlayer1 > speedWin) {
-            return true;
-        } else {
-            return false;
-        }
+        return (speedOfPlayer1 > speedWin);
     }
 
-    public static boolean getSpeed2(int speedOfPlayer2) {
+    public static boolean speed2(int speedOfPlayer2) {
         int speedWin = 0;
-        if (speedOfPlayer2 > speedWin) {
-            return true;
-        } else {
-            return false;
-        }
+        return (speedOfPlayer2 > speedWin);
     }
 
-    public static boolean getSpeed3(int speedOfPlayer3) {
+    public static boolean speed3(int speedOfPlayer3) {
         int speedWin = 0;
-        if (speedOfPlayer3 > speedWin) {
-            return true;
-        } else {
-            return false;
-        }
+        return (speedOfPlayer3 > speedWin);
     }
 
     public static void main(String[] args) {
-        getSpeed1(5);
-        getSpeed2(0);
-        getSpeed3(2);
-
-        System.out.println(getSpeed1(5));
-        System.out.println(getSpeed2(0));
-        System.out.println(getSpeed3(2));
-
-
+        int speedOfPlayer1 = 5;
+        int speedOfPlayer2 = 0;
+        int speedOfPlayer3 = 2;
+        int loser = 0;
+        if ((speed1(5)) == true) {
+            System.out.println("Игрок выбыл!");
+            loser = loser + 1;
+        } else {
+            System.out.println("Игрок выиграл!");
+        }
+        if ((speed2(0)) == true) {
+            System.out.println("Игрок выбыл!");
+            loser = loser + 1;
+        } else {
+            System.out.println("Игрок выиграл!");
+        }
+        if ((speed3(2)) == true) {
+            System.out.println("Игрок выбыл!");
+            loser = loser + 1;
+        } else {
+            System.out.println("Игрок выиграл!");
+        }
+        System.out.println("Выбыло " + loser);
     }
 }
 

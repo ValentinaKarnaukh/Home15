@@ -3,16 +3,22 @@ public class HomeWork16 {
 
     public static boolean speed1(int speedOfPlayer1) {
         int speedWin = 0;
+        if (!isGreenLight) {
+        }
         return (speedOfPlayer1 > speedWin);
     }
 
     public static boolean speed2(int speedOfPlayer2) {
         int speedWin = 0;
+        if (!isGreenLight) {
+        }
         return (speedOfPlayer2 > speedWin);
     }
 
     public static boolean speed3(int speedOfPlayer3) {
         int speedWin = 0;
+        if (!isGreenLight) {
+        }
         return (speedOfPlayer3 > speedWin);
     }
 
@@ -21,19 +27,19 @@ public class HomeWork16 {
         int speedOfPlayer2 = 0;
         int speedOfPlayer3 = 2;
         int loser = 0;
-        if ((speed1(5)) == true) {
+        if ((speed1(5))) {
             System.out.println("Игрок выбыл!");
             loser = loser + 1;
         } else {
             System.out.println("Игрок выиграл!");
         }
-        if ((speed2(0)) == true) {
+        if ((speed2(0))) {
             System.out.println("Игрок выбыл!");
             loser = loser + 1;
         } else {
             System.out.println("Игрок выиграл!");
         }
-        if ((speed3(2)) == true) {
+        if ((speed3(2))) {
             System.out.println("Игрок выбыл!");
             loser = loser + 1;
         } else {
